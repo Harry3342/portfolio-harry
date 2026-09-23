@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="120" rx="12" fill="url(#logoGrad)" />
+  <rect x="0.5" y="0.5" width="399" height="119" rx="11.5" fill="none" stroke="#334155" />
+
+  <!-- Isometric Craft Box Icon -->
+  <g transform="translate(32, 28)">
+    <!-- Top Face -->
+    <polygon points="32,0 64,16 32,32 0,16" fill="url(#cubeTop)" />
+    <!-- Left Face -->
+    <polygon points="0,16 32,32 32,64 0,48" fill="url(#cubeLeft)" />
+    <!-- Right Face -->
+    <polygon points="32,32 64,16 64,48 32,64" fill="url(#cubeRight)" />
+    <!-- Shopping Bag Handle Vector -->
+    <path d="M 22 11 Q 32 4 42 11" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(114, 48)">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">
+      Craft<tspan fill="#38bdf8">Commerce</tspan>
+    </text>
+    <text y="22" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#94a3b8" letter-spacing="1.5">
+      BACKEND ARCHITECTURE &amp; SUITE
+    </text>
+  </g>
+</svg>

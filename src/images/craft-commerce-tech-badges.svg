@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="badgeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="240" rx="12" fill="url(#badgeBg)" stroke="#1e293b" />
+
+  <text x="32" y="36" font-family="sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Key Architectural Verification Badges</text>
+
+  <!-- Badge 1: Stripe Verified -->
+  <g transform="translate(32, 60)">
+    <rect width="220" height="64" rx="8" fill="#1e1b4b" stroke="#6366f1" />
+    <circle cx="28" cy="32" r="14" fill="#4f46e5" />
+    <path d="M 23 32 L 27 36 L 35 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+    <text x="52" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#e0e7ff">Stripe Webhooks</text>
+    <text x="52" y="44" font-family="sans-serif" font-size="9" fill="#a5b4fc">HMAC-SHA256 Verified</text>
+  </g>
+
+  <!-- Badge 2: Real-time SSE -->
+  <g transform="translate(272, 60)">
+    <rect width="220" height="64" rx="8" fill="#022c22" stroke="#10b981" />
+    <circle cx="28" cy="32" r="14" fill="#059669" />
+    <path d="M 28 22 L 28 42 M 22 28 L 34 28" fill="none" stroke="#fff" stroke-width="2" />
+    <text x="52" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#a7f3d0">Real-Time Inventory</text>
+    <text x="52" y="44" font-family="sans-serif" font-size="9" fill="#6ee7b7">Server-Sent Events (SSE)</text>
+  </g>
+
+  <!-- Badge 3: Exact Decimal Currency -->
+  <g transform="translate(512, 60)">
+    <rect width="250" height="64" rx="8" fill="#172554" stroke="#3b82f6" />
+    <circle cx="28" cy="32" r="14" fill="#2563eb" />
+    <text x="24" y="37" font-family="sans-serif" font-size="14" font-weight="700" fill="#fff">$</text>
+    <text x="52" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#bfdbfe">Decimal Precision</text>
+    <text x="52" y="44" font-family="sans-serif" font-size="9" fill="#93c5fd">Prisma @db.Decimal(10,2)</text>
+  </g>
+
+  <!-- Badge 4: Historical Price Snapshot -->
+  <g transform="translate(32, 144)">
+    <rect width="220" height="64" rx="8" fill="#2e1065" stroke="#a855f7" />
+    <circle cx="28" cy="32" r="14" fill="#7e22ce" />
+    <path d="M 24 32 A 4 4 0 1 1 32 32 A 4 4 0 1 1 24 32" fill="#fff" />
+    <text x="52" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#f3e8ff">Price Snapshotting</text>
+    <text x="52" y="44" font-family="sans-serif" font-size="9" fill="#d8b4fe">OrderItem.priceAtPurchase</text>
+  </g>
+
+  <!-- Badge 5: Multer Upload -->
+  <g transform="translate(272, 144)">
+    <rect width="220" height="64" rx="8" fill="#451a03" stroke="#f59e0b" />
+    <circle cx="28" cy="32" r="14" fill="#d97706" />
+    <path d="M 28 38 L 28 24 M 23 29 L 28 24 L 33 29" fill="none" stroke="#fff" stroke-width="2" />
+    <text x="52" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#fef3c7">Multer Media</text>
+    <text x="52" y="44" font-family="sans-serif" font-size="9" fill="#fde68a">Multipart File Storage</text>
+  </g>
+
+  <!-- Badge 6: onDelete: Restrict -->
+  <g transform="translate(512, 144)">
+    <rect width="250" height="64" rx="8" fill="#4c0519" stroke="#f43f5e" />
+    <circle cx="28" cy="32" r="14" fill="#e11d48" />
+    <path d="M 24 26 L 32 38 M 32 26 L 24 38" fill="none" stroke="#fff" stroke-width="2" />
+    <text x="52" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#ffe4e6">Foreign Key Constraint</text>
+    <text x="52" y="44" font-family="sans-serif" font-size="9" fill="#fecdd3">onDelete: Restrict Active</text>
+  </g>
+</svg>
