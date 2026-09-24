@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { ThemeContext } from '../context/ThemeContext';
-import logo1 from '../images/portfolio-logo1.png'; // Import the logo image
+import logo1 from '../images/portfolio-logo1.webp'; // Import the logo image
 
 const ThemeToggle = ({ isDark, toggleTheme, id }) => (
   <label className="theme-toggle" htmlFor={id} title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>

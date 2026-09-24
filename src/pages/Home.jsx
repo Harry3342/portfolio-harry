@@ -4,11 +4,11 @@ import { ArrowRight, Github, Linkedin, Dribbble, ChevronLeft, ChevronRight } fro
 
 // 1. Import your project images here just like you did with the logo
 
-import project1Img from '../images/desktop-ui-showcase.jpg'; 
-import project2Img from '../images/task management.jpg';
-import project3Img from '../images/Weather Dashboard.png';
-import whackAMoleImg from '../images/whack a mole.png';
-import profileImg from '../images/harry.png';
+import project1Img from '../images/desktop-ui-showcase.webp'; 
+import project2Img from '../images/task management.webp';
+import project3Img from '../images/Weather Dashboard.webp';
+import whackAMoleImg from '../images/whack a mole.webp';
+import profileImg from '../images/harry.webp';
 
 const rockPaperScissorsImg = 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80';
 
@@ -50,6 +50,7 @@ const featuredProjects = [
     description: 'Android game app. Core Platform: Kotlin, Android Studio. UI: XML, Material 3. Architecture: ViewModel, LiveData. Animation: ObjectAnimator, Tween animations. Storage: SharedPreferences. Testing: JUnit, Espresso.',
     tech: ['Android', 'Kotlin', 'XML', 'ViewModel', 'LiveData', 'Material 3'],
     image: whackAMoleImg,
+    demo: 'https://whack-a-mole-android.vercel.app/',
   },
   {
     id: 6,
@@ -213,6 +214,7 @@ const Home = () => {
                   <img
                     src={project.image}
                     alt={project.title}
+                    loading="lazy"
                     className="h-full w-full object-cover"
                   />
                 </div>

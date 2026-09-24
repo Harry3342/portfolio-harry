@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Download, Code, Award, Users } from 'lucide-react';
-import ihub3Img from '../images/ihub 3.jpg';
-import ihub5Img from '../images/ihub 5.jpg';
+import ihub3Img from '../images/ihub 3.webp';
+import ihub5Img from '../images/ihub 5.webp';
 
 const About = () => {
   const skills = [
@@ -119,7 +119,7 @@ const About = () => {
             </div>
 
             <div className="w-full max-w-md overflow-hidden rounded-[2rem] border border-slate-200 bg-white/60 shadow-[0_18px_45px_rgba(15,23,42,0.08)] dark:border-slate-700 dark:bg-slate-900/60">
-              <img src={ihub3Img} alt="Harry at iHub" className="h-72 w-full object-cover object-center sm:h-80" />
+              <img src={ihub3Img} alt="Harry at iHub" loading="lazy" className="h-72 w-full object-cover object-center sm:h-80" />
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ const About = () => {
 
               <div className="space-y-4">
                 <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white/60 shadow-sm dark:border-slate-700 dark:bg-slate-900/60">
-                  <img src={ihub5Img} alt="Harry at iHub" className="h-60 w-full object-cover sm:h-72" />
+                  <img src={ihub5Img} alt="Harry at iHub" loading="lazy" className="h-60 w-full object-cover sm:h-72" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">

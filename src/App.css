@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(245, 245, 247, 0.78), rgba(245, 245, 247, 0.78)),
-    url('./images/embossed-diamond.png') center / 480px 480px repeat,
+    url('./images/embossed-diamond.webp') center / 480px 480px repeat,
     radial-gradient(circle at top left, rgba(136, 180, 255, 0.18), transparent 35%),
     radial-gradient(circle at bottom right, rgba(144, 214, 255, 0.14), transparent 25%),
     var(--bg);
@@ -344,7 +344,7 @@ code {
 .dark body {
   background:
     linear-gradient(rgba(11, 16, 32, 0.82), rgba(11, 16, 32, 0.82)),
-    url('./images/embossed-diamond.png') center / 480px 480px repeat,
+    url('./images/embossed-diamond.webp') center / 480px 480px repeat,
     radial-gradient(circle at top left, rgba(58, 119, 255, 0.28), transparent 26%),
     radial-gradient(circle at bottom right, rgba(100, 210, 255, 0.18), transparent 28%),
     var(--bg);

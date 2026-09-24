@@ -1,4 +1,4 @@
-import whackAMoleImg from '../images/whack a mole.png';
+import whackAMoleImg from '../images/whack a mole.webp';
 
 export const projectsData = [
   {
@@ -35,7 +35,7 @@ export const projectsData = [
     image: whackAMoleImg,
     tags: ['Android', 'Kotlin', 'ViewModel', 'LiveData', 'Material 3'],
     github: 'https://github.com/Harry3342',
-    demo: 'https://your-demo-url.com'
+    demo: 'https://whack-a-mole-android.vercel.app/'
   },
   {
     id: 5,
