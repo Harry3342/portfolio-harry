@@ -31,10 +31,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    linear-gradient(rgba(245, 245, 247, 0.78), rgba(245, 245, 247, 0.78)),
-    url('./images/embossed-diamond.webp') center / 480px 480px repeat,
-    radial-gradient(circle at top left, rgba(136, 180, 255, 0.18), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(144, 214, 255, 0.14), transparent 25%),
+    linear-gradient(rgba(245, 245, 247, 0.32), rgba(245, 245, 247, 0.32)),
+    url('./images/8_123dasa1.jpg') center / cover fixed no-repeat,
     var(--bg);
   color: var(--ink);
   font-family: "SF Pro Display", "SF Pro Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -122,6 +120,11 @@ body::after {
   border-color: rgba(122, 184, 255, 0.16);
   background: linear-gradient(145deg, rgba(32, 95, 171, 0.2), rgba(100, 210, 255, 0.12));
   box-shadow: 0 0 120px rgba(32, 95, 171, 0.24);
+}
+
+.dark body::before,
+.dark body::after {
+  display: none;
 }
 
 #root {
@@ -343,10 +346,8 @@ code {
 
 .dark body {
   background:
-    linear-gradient(rgba(11, 16, 32, 0.82), rgba(11, 16, 32, 0.82)),
-    url('./images/embossed-diamond.webp') center / 480px 480px repeat,
-    radial-gradient(circle at top left, rgba(58, 119, 255, 0.28), transparent 26%),
-    radial-gradient(circle at bottom right, rgba(100, 210, 255, 0.18), transparent 28%),
+    linear-gradient(rgba(6, 7, 20, 0.64), rgba(6, 7, 20, 0.64)),
+    url('./images/8275340.jpg') center / cover fixed no-repeat,
     var(--bg);
 }
 
@@ -355,13 +356,13 @@ code {
 }
 
 .apple-shell {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
 }
 
 .dark .apple-shell {
-  background: rgba(15, 23, 42, 0.58);
+  background: transparent;
 }
 
 .apple-panel {

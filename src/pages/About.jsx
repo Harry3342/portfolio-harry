@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Download, Code, Award, Users } from 'lucide-react';
 import ihub3Img from '../images/ihub 3.webp';
 import ihub5Img from '../images/ihub 5.webp';
+import resumePdf from '../images/Harry CV (1).pdf';
 
 const About = () => {
   const skills = [
@@ -195,8 +196,8 @@ const About = () => {
 
           <div className="text-center">
             <a
-              href="/resume.pdf"
-              download
+              href={resumePdf}
+              download="Harry-Rodger-Owino-Njoga-CV.pdf"
               className="apple-button-primary px-8 py-3.5"
             >
               <Download size={18} />
