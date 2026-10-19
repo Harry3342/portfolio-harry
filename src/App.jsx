@@ -7,6 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import Pattern from './components/Pattern';
 import './App.css';
 
 function AppRoutes() {
@@ -41,12 +42,15 @@ function AppRoutes() {
 function App() {
   return (
     <Router>
-      <div className="flex min-h-screen flex-col apple-shell">
-        <Navbar />
-        <main className="page-container flex-grow">
-          <AppRoutes />
-        </main>
-        <Footer />
+      <div className="site-root">
+        <Pattern />
+        <div className="flex min-h-screen flex-col apple-shell">
+          <Navbar />
+          <main className="page-container flex-grow">
+            <AppRoutes />
+          </main>
+          <Footer />
+        </div>
       </div>
     </Router>
   );

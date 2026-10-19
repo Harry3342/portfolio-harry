@@ -36,7 +36,7 @@ const Footer = () => {
                 <span className="social-link-button__icon"><Dribbble size={18} /></span>
                 <span className="social-link-button__background" />
               </a>
-              <a href="mailto:rodgersh72@gmail.com" className="social-link-button social-link-button--footer" aria-label="Send an email">
+              <a href="mailto:harrynjoga@gmail.com" className="social-link-button social-link-button--footer" aria-label="Send an email">
                 <span className="social-link-button__icon"><Mail size={18} /></span>
                 <span className="social-link-button__background" />
               </a>

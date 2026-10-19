@@ -1,32 +1,7 @@
-import React, { useState } from 'react';
-import { Mail, MapPin, Send } from 'lucide-react';
+import React from 'react';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setSubmitted(false), 3000);
-  };
-
   return (
     <div className="min-h-screen bg-transparent">
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -51,8 +26,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="mb-2 text-lg font-semibold text-slate-900 dark:text-white">Email</h3>
-                  <a href="mailto:rodgersh72@gmail.com" className="text-slate-600 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400">
-                    rodgersh72@gmail.com
+                  <a href="mailto:harrynjoga@gmail.com" className="text-slate-600 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400">
+                    harrynjoga@gmail.com
                   </a>
                 </div>
               </div>
@@ -77,77 +52,40 @@ const Contact = () => {
           </div>
 
           <div className="apple-section p-8 sm:p-10">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-200">Full Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900/60 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-sky-500 dark:focus:ring-sky-900/70"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-200">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900/60 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-sky-500 dark:focus:ring-sky-900/70"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-200">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900/60 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-sky-500 dark:focus:ring-sky-900/70"
-                  placeholder="Project inquiry"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="mb-2 block text-sm font-semibold text-slate-700 dark:text-slate-200">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="w-full resize-none rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900/60 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-sky-500 dark:focus:ring-sky-900/70"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="apple-button-primary w-full px-6 py-3.5"
+            <h2 className="mb-3 text-3xl font-semibold tracking-[-0.05em] text-slate-900 dark:text-white">Connect with Me</h2>
+            <p className="mb-8 text-slate-600 dark:text-slate-300">
+              Reach out by email or connect with me on LinkedIn and GitHub.
+            </p>
+            <div className="space-y-4">
+              <a
+                href="https://www.linkedin.com/in/harry-rodgers-03b8b1222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 text-slate-700 transition hover:border-sky-300 hover:text-sky-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-200 dark:hover:border-sky-700 dark:hover:text-sky-400"
               >
-                <Send size={18} />
-                Send Message
-              </button>
-
-              {submitted && (
-                <div className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-500/10 dark:text-emerald-300">
-                  Thank you! Your message has been sent successfully.
-                </div>
-              )}
-            </form>
+                <Linkedin className="h-5 w-5 shrink-0" />
+                <span className="font-semibold">LinkedIn</span>
+                <span className="ml-auto text-sm text-slate-500 dark:text-slate-400">View profile</span>
+              </a>
+              <a
+                href="https://github.com/Harry3342"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 text-slate-700 transition hover:border-sky-300 hover:text-sky-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-200 dark:hover:border-sky-700 dark:hover:text-sky-400"
+              >
+                <Github className="h-5 w-5 shrink-0" />
+                <span className="font-semibold">GitHub</span>
+                <span className="ml-auto text-sm text-slate-500 dark:text-slate-400">View profile</span>
+              </a>
+              <a
+                href="mailto:harrynjoga@gmail.com"
+                className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 text-slate-700 transition hover:border-sky-300 hover:text-sky-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-200 dark:hover:border-sky-700 dark:hover:text-sky-400"
+              >
+                <Mail className="h-5 w-5 shrink-0" />
+                <span className="font-semibold">Email</span>
+                <span className="ml-auto text-sm text-slate-500 dark:text-slate-400">harrynjoga@gmail.com</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

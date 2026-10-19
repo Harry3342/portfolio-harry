@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Tag, ChevronLeft, ChevronRight } from 'lucide-react';
 import { blogData } from '../data/sampleData';
+import blogPlaceholder from '../images/composed.jpg';
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -127,18 +128,18 @@ const Blog = () => {
               id={`post-${post.id}`}
               className="apple-project-card overflow-hidden"
             >
-              <div className="md:flex">
+              <div className="md:flex md:h-56">
                 <div className="md:w-1/3">
                   <img
-                    src={post.image}
+                    src={post.image || blogPlaceholder}
                     alt={post.title}
                     loading="lazy"
-                    className="h-64 w-full object-cover transition duration-300 hover:scale-105 md:h-full"
+                    className="h-36 w-full object-cover transition duration-300 hover:scale-105 md:h-full"
                   />
                 </div>
 
-                <div className="p-8 md:w-2/3">
-                  <div className="mb-4 flex flex-wrap gap-4">
+                <div className="p-5 md:w-2/3">
+                  <div className="mb-2 flex flex-wrap gap-4">
                     <span className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
                       <Calendar size={16} />
                       {new Date(post.date).toLocaleDateString('en-US', {
@@ -153,17 +154,28 @@ const Blog = () => {
                     </span>
                   </div>
 
-                  <h2 className="mb-3 text-2xl font-semibold tracking-[-0.04em] text-slate-900 dark:text-white md:text-3xl">
+                  <h2 className="mb-2 text-2xl font-semibold tracking-[-0.04em] text-slate-900 dark:text-white md:text-2xl">
                     {post.title}
                   </h2>
 
-                  <p className="mb-6 text-slate-600 dark:text-slate-300">
+                  <p className="mb-3 text-sm leading-5 text-slate-600 dark:text-slate-300">
                     {post.excerpt}
                   </p>
 
-                  <button className="font-semibold text-sky-600 hover:text-sky-500 dark:text-sky-400 dark:hover:text-sky-300">
-                    Read More →
-                  </button>
+                  {post.url ? (
+                    <a
+                      href={post.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-sky-600 hover:text-sky-500 dark:text-sky-400 dark:hover:text-sky-300"
+                    >
+                      Read More →
+                    </a>
+                  ) : (
+                    <button className="font-semibold text-sky-600 hover:text-sky-500 dark:text-sky-400 dark:hover:text-sky-300">
+                      Read More →
+                    </button>
+                  )}
                 </div>
               </div>
             </article>

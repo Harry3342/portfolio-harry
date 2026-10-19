@@ -281,10 +281,10 @@ const Home = () => {
 
       <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="apple-section bg-gradient-to-br from-sky-500/90 to-blue-700/90 p-8 text-center shadow-[0_30px_80px_rgba(59,130,246,0.35)] lg:p-12">
-          <h2 className="mb-4 text-4xl font-semibold tracking-[-0.05em]" style={{ color: '#ffffff' }}>
+          <h2 className="mb-4 text-4xl font-semibold tracking-[-0.05em] text-slate-900 dark:text-white">
             Ready to work together?
           </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg" style={{ color: '#dbeafe' }}>
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-700 dark:text-slate-200">
             Let&apos;s discuss your next idea and build a product experience people genuinely enjoy using.
           </p>
           <Link

@@ -1,3 +1,5 @@
+import reactHooksCover from '../images/composed (1).jpg';
+import tailwindCover from '../images/composed.jpg';
 import whackAMoleImg from '../images/whack a mole.webp';
 
 export const projectsData = [
@@ -79,19 +81,21 @@ export const blogData = [
   {
     id: 1,
     title: 'Getting Started with React Hooks',
-    excerpt: 'Learn how to use React Hooks to manage state and side effects in functional components.',
+    excerpt: 'New to Hooks or ready to make better use of them? This guide introduces the core ideas behind React Hooks, showing how they help you manage component state and side effects with simpler, reusable function components.',
     date: '2024-01-15',
     category: 'React',
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=500&h=300&fit=crop',
+    image: reactHooksCover,
+    url: 'https://harryowino.substack.com/p/getting-started-with-react-hooks?r=95khzp',
     content: 'React Hooks have revolutionized the way we write React components...'
   },
   {
     id: 2,
     title: 'Mastering Tailwind CSS',
-    excerpt: 'A comprehensive guide to building beautiful UIs with Tailwind CSS utility classes.',
+    excerpt: 'Build polished interfaces without leaving your markup. This guide walks through Tailwind CSS utility classes, responsive styling, and practical patterns for composing consistent, attractive layouts while keeping your styles easy to refine.',
     date: '2024-01-20',
     category: 'CSS',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+    image: tailwindCover,
+    url: 'https://harryowino.substack.com/p/mastering-tailwind-css?r=95khzp&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
     content: 'Tailwind CSS is a utility-first CSS framework that makes it easy to build modern designs...'
   },
   {
@@ -100,7 +104,6 @@ export const blogData = [
     excerpt: 'Tips and tricks to optimize your web applications for faster load times.',
     date: '2024-02-01',
     category: 'Performance',
-    image: 'https://images.unsplash.com/photo-1460925895917-adf4e565dc18?w=500&h=300&fit=crop',
     content: 'Web performance is crucial for user experience and SEO rankings...'
   }
 ];
